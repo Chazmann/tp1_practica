@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+::root {
+
+    --bluetw: #00acee;
+}
+
+#nro1,
+#nro2,
+#nro3 {
+    height: 100px;
+    width: 300px;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 0 8px -6px black;
+    border-radius: 10px;
+    margin: 15px;
+    transition: all .2s ease-in-out !important;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: antiquewhite;
+    padding: 20px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 0 0 15px -3px rgba(0, 0, 0, 0.393);
+}
+
+main {
+    display: grid;
+    align-content: center;
+}
+
+.flex {
+    display: flex;
+    margin: auto;
+}
+
+section {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.btn {
+    background-color: firebrick;
+}
+
+button {
+    padding: 5px 15px;
+    border: 0;
+    border-radius: 14px;
+    border: solid 2px #00acee;
+    color: #00acee;
+    font-weight: 700;
+    box-shadow: 0 2px 15px -10px black;
+    cursor: pointer;
+    background-color: white;
+    transition: all .1s ease-in-out;
+}
+button:hover{
+    box-shadow: 0 2px 8px -3px black;
+}
+
+button.active {
+    background-color: #00acee;
+    color: white;
+}
+button.hover {
+    background-color:#b00b02;
+    color: white;
+    border: solid 2px #b00b02;
+}
