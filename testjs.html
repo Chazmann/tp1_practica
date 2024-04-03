@@ -19,19 +19,30 @@
         </div>
         <button id="btn" type="button" onclick="e()" onmouseover="remove()" onmouseout="siguiendo()">Seguir</button>
     </main>
-    <form action="" id="autocomp" class="">
-        <div>
-            <input type="text" class="input" id="autoComplete">
-        </div>
-        <ul class="list"></ul>
 
 
-    </form>
+    <label for="busca">Buscar especialidades</label>
+    <input type="search" id="busca" list="espe">
+
+    <datalist id="espe" >
+        <option value="Rio de Janeiro"></option>
+        <option value="San Pablo"></option>
+        <option value="Nueva York"></option>
+        <option value="Miami"></option>
+        <option value="Roma"></option>
+        <option value="Buenos Aires"></option>
+        <option value="Madrid"></option>
+        <option value="Barcelona"></option>
+        <option value="México DF"></option>
+        <option value="Bogota"></option>
+        <option value="Lima"></option>
+        <option value="Quito"></option>
+    </datalist>
 
     <script src="js/action.js"></script>
     <script src="js/autocomp.js"></script>
-    
-    
+
+
 </body>
 
 
