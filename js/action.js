@@ -14,8 +14,8 @@ function e() {
     texto.innerHTML = "Siguiendo";
   } else {
     texto.innerHTML = "Seguir";
-    texto.classList.remove("active")
-    texto.classList.remove("hover")
+    texto.classList.remove("active", "hover")
+    //texto.classList.remove("hover")
   }
   element.classList.toggle("btn");
   console.log(texto.textContent, counter);

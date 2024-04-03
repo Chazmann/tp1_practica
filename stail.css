@@ -19,6 +19,7 @@ body {
 #nro2,
 #nro3 {
     height: 100px;
+    flex: 1 1 300px;
     width: 300px;
     display: grid;
     place-items: center;
@@ -50,6 +51,9 @@ main {
     display: flex;
     margin: auto;
 }
+.fwrap{
+    flex-wrap: wrap;
+}
 
 section {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -70,7 +74,7 @@ button {
     color: #00acee;
     font-weight: 700;
     height: 24px;
-    line-height: 12px;
+    line-height: 10px;
     cursor: pointer;
     background-color: white;
     transition: all .05s ease-in-out;
@@ -90,3 +94,26 @@ button.hover {
     color: white;
     border: solid 2px #b00b02;
 }
+
+form { width: 75vmin;
+height: 100%;
+margin: auto;
+margin-top: 20px;}
+
+.input {
+    padding: 5px 15px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.list {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 0 0 5px 5px;
+  }
+  .list-items {
+    padding: 10px 5px;
+  }
+  .list-items:hover {
+    background-color: #dddddd;
+  }

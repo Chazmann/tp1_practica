@@ -13,14 +13,27 @@
         <span>ENCABEZADO</span>
     </header>
     <main>
-        <div class="flex">
+        <div class="flex fwrap">
             <section id="nro1"></section>
             <section id="nro2">Section n°2</section>
         </div>
-        <button id="btn" type="button" onclick="e()" onmouseover="remove()" onmouseout="siguiendo()" >Seguir</button>
+        <button id="btn" type="button" onclick="e()" onmouseover="remove()" onmouseout="siguiendo()">Seguir</button>
     </main>
+    <form action="" id="autocomp" class="">
+        <div>
+            <input type="text" class="input" id="autoComplete">
+        </div>
+        <ul class="list"></ul>
+
+
+    </form>
 
     <script src="js/action.js"></script>
+    <script src="js/autocomp.js"></script>
+    
+    
 </body>
+
+
 
 </html>
