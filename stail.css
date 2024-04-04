@@ -51,7 +51,8 @@ main {
     display: flex;
     margin: auto;
 }
-.fwrap{
+
+.fwrap {
     flex-wrap: wrap;
 }
 
@@ -63,7 +64,7 @@ section {
 .btn {
     background-color: #00acee;
     color: white;
-    
+
 }
 
 button {
@@ -81,7 +82,8 @@ button {
     width: 140px;
 
 }
-button:hover{
+
+button:hover {
     box-shadow: 0 2px 8px -3px rgba(0, 0, 0, 0.448);
 }
 
@@ -89,16 +91,19 @@ button.active {
     background-color: #00acee;
     color: white;
 }
+
 button.hover {
-    background-color:#b00b02;
+    background-color: #b00b02;
     color: white;
     border: solid 2px #b00b02;
 }
 
-form { width: 75vmin;
-height: 100%;
-margin: auto;
-margin-top: 20px;}
+form {
+    width: 75vmin;
+    height: 100%;
+    margin: auto;
+    margin-top: 20px;
+}
 
 .input {
     padding: 5px 15px;
@@ -110,10 +115,60 @@ margin-top: 20px;}
     width: 100%;
     background-color: #ffffff;
     border-radius: 0 0 5px 5px;
-  }
-  .list-items {
+}
+
+.list-items {
     padding: 10px 5px;
-  }
-  .list-items:hover {
+}
+
+.list-items:hover {
     background-color: #dddddd;
-  }
+}
+
+
+
+/* --------------BUSCADOR DATALIST----------------- */
+
+
+
+
+.ui-widget {
+    display: flex;
+    flex-direction: column;
+    position: relative!important;
+    overflow: hidden!important;
+    align-items: center;
+    padding: 10px;
+    
+  
+
+    & #espec, & #especi {
+        padding: 5px 10px;
+        border: 0;
+        border-radius: 14px;
+        min-width: 300px;
+        position: relative;
+        box-shadow: 0 0px 7px -3px rgba(0, 0, 0, 0.633) ;
+
+    }
+   
+    & li {
+        
+        width: 100%;
+        list-style: none;
+        padding: 0 5px;
+        background-color: #ffffff;
+        transition: all .2s ease-in-out;
+     
+    }
+    & li:hover {
+        width: 100%;
+        list-style: none;
+        padding: 0 5px;
+        background-color: #c9c9c9;
+     
+    }
+    
+}
+.ui-helper-hidden-accessible {display: none!important;
+height: 0!important;}
