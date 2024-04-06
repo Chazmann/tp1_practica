@@ -285,7 +285,7 @@ body {
 }
 
 .modal-content {
-    min-width: 80%;
+    max-width: 70%;
     margin: auto;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -297,7 +297,7 @@ body {
     & input[type=date], & select, & textarea{
         border: 0 !important;
         outline: none !important;
-        border-bottom: solid 2px rgb(174, 174, 174)!important;
+        border-bottom: solid 1px rgb(174, 174, 174)!important;
         border-radius: 0!important;
         font-size: .9em;
         transition: all .2s ease-in-out;
@@ -308,7 +308,7 @@ body {
     & input[type=hidden]:hover,
     & input[type=search]:hover,
     & input[type=date]:hover, & select:hover, & textarea:hover{background-color: #50b86010 !important;
-        box-shadow: 0 3px 15px -9px rgba(0, 0, 0, 0.179);
+        box-shadow: 0 3px 15px -7px rgba(0, 0, 0, 0.179);
         border-radius:  8px 8px 0 0!important;
       
 
