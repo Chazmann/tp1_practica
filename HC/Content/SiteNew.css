@@ -1,6 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Staatliches&display=swap');
+
 * {
     /*font-size: 0.97em !important;*/
 }
+
+.staat-font {
+
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-flex {
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "wdth" 100,
+        "GRAD" 0,
+        "XOPQ" 96,
+        "XTRA" 468,
+        "YOPQ" 79,
+        "YTAS" 750,
+        "YTDE" -203,
+        "YTFI" 738,
+        "YTLC" 514,
+        "YTUC" 712;
+}
+
+:root {
+    --staat: "Staatliches", sans-serif!important;
+    --roboto-F:  "Roboto Flex", sans-serif!important;
+    --header-gradient: linear-gradient(90deg, #50b860 50%, rgb(94, 94, 248) 100% )!important;
+}
+
 
 body {
     /*font-family: Arial, Helvetica, sans-serif;*/
@@ -271,46 +307,58 @@ body {
 .nav-markey {
     background-color: #50b860 !important;
 }
+.nav-markey-grad {
+    background: linear-gradient(90deg, #50b860 50%, rgb(94, 94, 248) 100% )!important;
+}
+
 
 /* -------------MODAL RESTYLED--------- */
 
 .modal-header {
     padding: 8px 15px;
     box-shadow: 0 0 15px -3px rgba(0, 0, 0, 0.583);
-    margin-bottom: -10px!important;  
+    margin-bottom: -10px !important;
+    background: var(--header-gradient);
 }
-.modal-title{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif!important;
-    font-size: 1.2em;
+
+.modal-title {
+    font-family: var(--staat);
+    font-size: 1.6em;
 }
 
 .modal-content {
     max-width: 70%;
     margin: auto;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: var(--roboto-F);
     font-size: .85em;
 
     & input[type="text"],
     & input[type=number],
     & input[type=search],
-    & input[type=date], & select, & textarea{
+    & input[type=date],
+    & select,
+    & textarea {
         border: 0 !important;
         outline: none !important;
-        border-bottom: solid 1px rgb(174, 174, 174)!important;
-        border-radius: 0!important;
+        border-bottom: solid 1px rgb(174, 174, 174) !important;
+        border-radius: 0 !important;
         font-size: .9em;
         transition: all .2s ease-in-out;
-        
+
     }
+
     & input[type="text"]:hover,
     & input[type=number]:hover,
     & input[type=hidden]:hover,
     & input[type=search]:hover,
-    & input[type=date]:hover, & select:hover, & textarea:hover{background-color: #50b86010 !important;
+    & input[type=date]:hover,
+    & select:hover,
+    & textarea:hover {
+        background-color: #50b86010 !important;
         box-shadow: 0 3px 15px -7px rgba(0, 0, 0, 0.179);
-        border-radius:  8px 8px 0 0!important;
-      
+        border-radius: 8px 8px 0 0 !important;
+
 
     }
 
