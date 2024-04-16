@@ -11,9 +11,10 @@ function e() {
   //cambio el texto del boton
   if (texto.innerHTML === "Seguir") {
     texto.classList.add("active")
-    texto.innerHTML = "Siguiendo";
+    texto.textContent = "Siguiendo";
   } else {
     texto.innerHTML = "Seguir";
+    header.innerHTML = `<b>Jodiendo con el Js DOM - Seguir la vaina</b>`;
     texto.classList.remove("active", "hover")
     //texto.classList.remove("hover")
   }
