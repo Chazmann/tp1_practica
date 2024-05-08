@@ -64,14 +64,16 @@ function sumar(){
     cant = 1 + cant
     countercart.innerText = cant
     mensajeF()    
+
   }
   
   }
 
   function mensajeF(){
+    let names = document.getElementById('nombre').value
     if ( cant > 0 && cant < 9 ){
       mensaje.style.display="block"
-      mensaje.innerHTML = "Máximo 9 unidades"
+      mensaje.innerHTML = names + `, el máximo 9 unidades`
       suma.innerText = "add"
       suma.style.backgroundColor = ""
       mensaje.style.color = "gray"
@@ -80,13 +82,7 @@ function sumar(){
       mensaje.style.display="block"
       suma.innerText = "cancel"
       suma.style.backgroundColor = "gray"
-      mensaje.style.color = "red"
-      mensaje.innerText = "No se puede solicitar más unidades"
+      mensaje.style.color = "red"    
+      mensaje.innerText = names + `, no puede solicitar más unidades`
      }
   }
-function capturar(){
-  let names = document.getElementById('nombre').value
-
-  console.log(names)
-}
-
