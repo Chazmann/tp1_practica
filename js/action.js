@@ -43,3 +43,39 @@ function siguiendo() {
     
   }
 }
+
+let countercart = document.getElementById("target")
+
+let cant = 1
+
+countercart.innerText = cant
+let mensaje = document.getElementById('mesg')
+function restar(){
+  if ( cant > 1) {
+    cant = cant - 1
+    countercart.innerText = cant
+   mensajeF() 
+  }
+}
+
+function sumar(){
+  if ( cant >= 0 && cant < 9) {
+    cant = 1 + cant
+    countercart.innerText = cant
+    mensajeF()    
+  }
+  
+  }
+
+  function mensajeF(){
+    if ( cant > 0 && cant < 9 ){
+      mensaje.style.display="none"
+     }
+     else{
+      mensaje.style.display="block"
+      mensaje.innerHTML = "<span>No se puede solicitar más de 9 piezas</span>"
+     }
+  }
+
+ 
+

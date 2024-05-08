@@ -172,3 +172,28 @@ form {
 }
 .ui-helper-hidden-accessible {display: none!important;
 height: 0!important;}
+
+
+
+.addcart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60px;
+    gap: 5px;
+    .btn{
+        flex: 1!important;
+        height: 100%;
+        font-weight: 700;
+        font-size: 24pt;
+    }
+    i{
+        display: grid;
+        place-items: center;
+        font-size: 24pt;
+        flex: 0 0 3ch!important;
+        height: 100%;
+        padding: 0 3ch;        
+    }
+    
+}
