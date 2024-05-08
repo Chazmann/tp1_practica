@@ -45,6 +45,7 @@ function siguiendo() {
 }
 
 let countercart = document.getElementById("target")
+let suma = document.getElementById('sumar')
 
 let cant = 1
 
@@ -69,11 +70,18 @@ function sumar(){
 
   function mensajeF(){
     if ( cant > 0 && cant < 9 ){
-      mensaje.style.display="none"
+      mensaje.style.display="block"
+      mensaje.innerHTML = "Máximo 9 unidades"
+      suma.innerText = "add"
+      suma.style.backgroundColor = ""
+      mensaje.style.color = "gray"
      }
      else{
       mensaje.style.display="block"
-      mensaje.innerHTML = "<span>No se puede solicitar más de 9 piezas</span>"
+      suma.innerText = "cancel"
+      suma.style.backgroundColor = "gray"
+      mensaje.style.color = "red"
+      mensaje.innerText = "No se puede solicitar más unidades"
      }
   }
 
