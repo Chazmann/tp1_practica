@@ -84,6 +84,9 @@ function sumar(){
       mensaje.innerText = "No se puede solicitar más unidades"
      }
   }
+function capturar(){
+  let names = document.getElementById('nombre').value
 
- 
+  console.log(names)
+}
 

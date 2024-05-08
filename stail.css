@@ -139,10 +139,11 @@ form {
     overflow: hidden!important;
     align-items: center;
     padding: 10px;
+    gap: 20px;
     
   
 
-    & #espec, & #especi {
+    & #espec, & #especi, #nombre {
         padding: 5px 10px;
         border: 0;
         border-radius: 14px;

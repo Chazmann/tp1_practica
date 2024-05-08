@@ -38,6 +38,7 @@
     <div class="ui-widget">
         <label for="espec">Buscar especialidades jquery</label>
         <input type="search" id="especi" name="especialidades">
+        <input type="texts" id="nombre" placeholder="Ingresar nombre" onchange="capturar()">
     </div>
 
     <div class="addcart">
@@ -45,7 +46,9 @@
         <button class="btn iconos" onclick="restar()">remove</button>
         <i id="target"></i>
         <button id="sumar" class="btn iconos" onclick="sumar()">add</button></div>
+      
         <div id="mesg"></div>
+        
     </div>
 
 
