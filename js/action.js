@@ -2,6 +2,9 @@ let counter = 1;
 let header = document.getElementById("head");
 let element = document.getElementById("nro1");
 let texto = document.getElementById("btn");
+let pop = document.getElementsByClassName("popup");
+
+
 element.innerHTML = `Nro de clics ${counter}`;
 
 function e() {
@@ -88,3 +91,25 @@ function mensajeF() {
     mensaje.innerText = names + `, no puede solicitar más unidades`;
   }
 }
+
+
+
+
+
+document.getElementById("sumar").onclick = function () {
+  sumar();
+};
+console.log("antes boton");
+
+let abrir = document.querySelector(".trigger")
+abrir.addEventListener("click", () => {
+  pop[0].style.display = "block"
+  pop[0].style.opacity = 1
+})
+
+let cerrar = document.querySelector(".btnclose")
+cerrar.addEventListener("click", () => {
+  pop[0].style.display = 'none'
+  pop[0].style.opacity = 0
+  
+});
