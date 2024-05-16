@@ -1,6 +1,6 @@
 //conecto con el archivo json
 //fetch('UBICACION - puede ser local o remoto')
-fetch('personas.json')
+fetch('js/personas.json')
 //espero respuesta
 .then(response => {
     //almacena los datos obtenidos convertidos a json
