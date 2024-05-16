@@ -6,6 +6,8 @@ fetch('../data/personas.json')
     //almacena los datos obtenidos convertidos a json
     return response.json()
     })
+    // cuando devuelve la conversión a un array de objetos podemos comenzar a utilizarlos.
+    // utilizamos una variable, en ésta oportunidad ocupamos el nombre DATA
 .then(data => {
   
     for (let i=0; i < data.length; i++){
